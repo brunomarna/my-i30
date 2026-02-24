@@ -1,0 +1,287 @@
+:root{
+--hyundai-N-DAY: rgba(166, 201, 235);
+--hyundai-NIGHT: #0c366b;
+--black: #1313a;
+--white: #fff;
+--border: 3px solid rgba(128, 165, 196, 0.3);
+--box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family:"IBM Plex Sans","Roboto","Helvetica","Arial","sans-serif";
+  
+}
+
+.header{
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: var(--hyundai-N-DAY);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-bottom: 3px solid var(--hyundai-NIGHT);
+  
+}
+
+.header .home-icon{
+  cursor: pointer;
+
+}
+
+#myi30text{
+  display: inline-block;
+  transform: translateY(-10px);
+  font-weight: bold;
+}
+
+
+#btn-logout{
+  background-color:rgb(223, 240, 254);
+  width: 80px;
+  height: 30px;
+  color:var(--hyundai-NIGHT);
+  font-weight: 400;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 3px solid var(--hyundai-NIGHT);
+  margin-top: 20px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  
+}
+
+#btn-logout:hover{
+  background-color: var(--hyundai-NIGHT);
+  color: #fff;
+}
+
+
+body{
+  display: flex;
+  background:url(../img/odometer.jpg) no-repeat center center/cover;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  
+}
+
+#serviceDate{
+  outline: none;
+}
+
+#screenMessage {
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.icone{
+  width: 20px;
+  height: 20px;
+}
+
+.container-user{
+  border: 3px solid var(--hyundai-NIGHT);
+  border-radius: 10px;
+  padding: 20px 20px;
+  width: 420px;
+  color: var(--black);
+  background: var(--hyundai-N-DAY);
+  text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  
+}
+
+
+.container-user h1{
+  font-size: 40px;  
+  color: var(--hyundai-NIGHT);
+  margin-bottom: 20px;
+  
+}
+
+
+.input-services {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin: 10px auto;
+  height: fit-content;
+  padding: 15px 0;   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 180px 100px; 
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
+  width: fit-content; 
+  outline: none;
+  
+}
+
+.input-services div {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin-bottom: 8px;
+}
+
+.input-services span {
+  width: 120px;           
+  text-align: left;
+  margin-left: 10px;
+}
+
+
+h3{
+  margin-bottom: 5px;
+}
+
+
+.input-note {
+  width: 350px;
+  min-height:fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  resize: none;
+  
+}
+
+
+
+
+.container-tires{
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: transparent;
+  height: fit-content;
+  padding: 15px 0;   
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  gap: 10px; 
+
+  
+
+}
+
+.container-tires div{
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin-bottom: 8px;
+}
+
+.container-tires span {
+  width: 120px;          
+  text-align: left;      
+  margin-left: 10px;     
+}
+
+.notes-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.notes-wrapper div {
+  margin-bottom: 5px;
+}
+
+
+.security-items{
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.security-items input{
+  outline: none;
+}
+
+
+#fire-warning {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+.submit{
+  background-color:rgb(223, 240, 254);
+  width: 50%;
+  height: 50px;
+  color:var(--hyundai-NIGHT);
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 3px solid var(--hyundai-NIGHT);
+  margin-top: 20px;
+  font-size: 18px;
+    
+}
+
+.submit:hover{
+  background-color: var(--hyundai-NIGHT);
+  color: #fff;
+}
+
+.info{
+  margin-top: 20px;
+}
+
+#success-popup {
+    position: fixed;
+    bottom: -100px; /* Start hidden below the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--hyundai-NIGHT);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: bottom 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28); /* Bouncy effect */
+    z-index: 1000;
+}
+
+#success-popup.show {
+    bottom: 40px; /* Slides up into view */
+}
+
+
+footer{
+  font-size: 10px;
+  margin-top: 8px;
+}

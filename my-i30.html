@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Federant&family=M+PLUS+Rounded+1c&family=Playwrite+CU+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/my-i30.css">
+  <title>My car</title>
+</head>
+<body >
+   <header class="header">
+    <div>
+    <img class="home-icon"  src="./src/img/icons8-hyundai-48.png" />
+    <span id="myi30text">My i30</span>
+    </div>
+    <button id="btn-logout" style="float: right; margin: 10px;">Logout</button>
+  </header>
+  
+  <main class="container-user">
+    <h1>My i30<img class="logo" src="./src/img/icons8-hyundai-48.png"></h1>
+    <form> 
+      <div><input type="date" id="serviceDate"><span> NEXT service date</span>
+      <div id="screenMessage" style="display: none; background-color: #ffcccc; color: #b30000; padding: 10px; border-radius: 10px; margin: 10px 0; font-weight: bold; border: 2px solid red;">
+    ⚠️ Attention: Your car service is due in less than 7 days!
+</div>
+      <img class="icone" id="warningIcon" src="./src/img/icons8-alert-40.png"/>
+      </div>
+      <div class="input-services">
+        <h3>Engine Services</h3>
+        
+        
+        <div><span> Miles/Kms</span><input type="number" class="inputs" id="input-miles" placeholder="Current miles/kms"></div>
+        
+        <div><span> Oil/filter</span><input type="number" class="inputs" id="input-oil" placeholder="Odometer at service"></div>
+
+        <div><span> Air filter</span><input type="number" class="inputs" id="input-air" placeholder="Odometer at service"></div>
+
+        <div><span> Brake system</span><input type="number" class="inputs" id="input-brake" placeholder="Odometer at service"></div>
+        
+        <div><span> Cooling system</span><input type="number" class="inputs" id="input-cooling" placeholder="Odometer at service"></div>
+
+        <div><span> Spark plug</span><input type="number" class="inputs" id="input-spark" placeholder="Odometer at service"></div>
+
+        <div><span> Fuel filter</span><input type="number" class="inputs" id="input-fuel" placeholder="Odometer at service"></div>
+
+        <div class="pencil" ><i class="fa-solid fa-pen"></i><span>notes</span></div>
+        <div><textarea type="text" class="input-note" id="input-note1" placeholder="ex: timing belt changed at 83k miles/kms"></textarea>
+        
+        </div> 
+        
+    </div>  
+      <div class="container-tires">
+        <h3>Tires & Suspension</h3>
+        <div>
+          <span> Suspension</span>
+          <input type="number" class="inputs" id="input-susp" placeholder="Odometer at service">
+          
+        </div>
+       <div class="notes-wrapper">
+        <div><i class="fa-solid fa-pen"></i><span>notes</span></div>
+        <div><textarea type="text" class="input-note" id="input-note2" placeholder="ex: lower arm + 2 new tires  at 83k miles/kms" ></textarea></div>  
+          
+        </div>  
+        </div>  
+      </div>  
+
+      <div class="security-items"> 
+        <h4>Security items</h4>
+        <div><span>fire ext. </span><input id="input-fire" type="month"><span> exp. year</span>
+        </div>
+        <div id="fire-warning" style="display: none; color: red; font-size: 12px; font-weight: bold; margin-top: 5px;">
+    ⚠️ FIRE EXT. EXPIRED OR EXPIRING SOON!
+  </div>
+      </div>
+
+      </div>
+
+
+     
+
+      <button class="submit" id="btn-save">Save</button>
+    </form>    
+    <div id="success-popup">✅ Record Saved Successfully!</div>
+
+    <div class="info">
+      <h6>For all recommended maintenance milage/ intervals ALWAYS check the manual</h6>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 My i30. This project is a personal portfolio piece and is not 
+    affiliated with, authorized, maintained, sponsored, or endorsed by Hyundai 
+    Motor Company or any of its affiliates.</p>
+  </footer>
+
+  <script src="./src/js/my-i30.js"></script>
+</body>
+</html>

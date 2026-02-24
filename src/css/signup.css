@@ -1,0 +1,46 @@
+
+:root {
+  --hyundai-N-DAY: rgba(166, 201, 235);
+  --hyundai-NIGHT: #0c366b;
+  --white: #fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body.sigup-page{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(../img/20141011_070141.jpg) no-repeat center center/cover;
+
+}
+
+.container h1 {
+  font-size: 32px; 
+  margin-bottom: 20px;
+  color: var(--hyundai-NIGHT);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+.register-link p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.register-link a {
+  color: var(--hyundai-NIGHT);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

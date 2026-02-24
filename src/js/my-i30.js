@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             try {
-                const response = await fetch('http://127.0.0.1:3000/api/save-service', {
+                const response = await fetch('https://my-i30-backend.onrender.com/api/save-service', {
                     method: 'POST',
                     headers: { 
                 'Content-Type': 'application/json',
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
         
-        const response = await fetch('http://127.0.0.1:3000/api/get-latest', {
+        const response = await fetch('https://my-i30-backend.onrender.com/api/get-latest', {
             method: 'GET',
             headers: { 
                 'Authorization': `Bearer ${token}`, 

@@ -7,7 +7,7 @@ document.getElementById('btn-submit').addEventListener('click', async (e) => {
     const rememberMe = document.querySelector('input[type="checkbox"]').checked;
 
     try {
-        const response = await fetch('http://127.0.0.1:3000/api/login', {
+        const response = await fetch('https://my-i30-backend.onrender.com/api/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password })
@@ -37,7 +37,7 @@ document.getElementById('btn-demo').addEventListener('click', async () => {
     const demoPassword = 'i30-demo-password'; 
 
     try {
-        const response = await fetch('http://127.0.0.1:3000/api/login', {
+        const response = await fetch('https://my-i30-backend.onrender.com/api/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: demoEmail, password: demoPassword })

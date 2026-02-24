@@ -15,7 +15,7 @@ A full-stack vehicle management application designed for Hyundai i30 owners. Thi
 -![Login](./screenshots/login-page-scn.png)
 -*Custom-themed login with persistent session support.*
 -### User Dashboard
--![Dashboard](./screenshots/...)
+-![Dashboard](./Screenshots/dashboard-scn.png)
 -*Visual alerts turn red when maintenance is overdue based on current mileage.*
 
 

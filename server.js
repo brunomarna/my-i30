@@ -32,7 +32,7 @@ const User = mongoose.model('User', userSchema);
 
 app.use(cors({
   
-  origin: ['http://127.0.0.1:5500', 'https://brunomarna.github.io'], 
+  origin: ['http://127.0.0.1:5500', 'https://brunomarna.github.io/my-i30/'], 
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'] 
 }));
